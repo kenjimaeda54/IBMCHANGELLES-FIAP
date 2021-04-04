@@ -1,7 +1,7 @@
 # IBMCHANGELLES-FIAP
 Aplicação IBM Changelle
 
-### Aplicação web com React, para iniciar o projeto e todos recursos usados
+### Aplicação web com React, para iniciar o projeto é todos recursos usados
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
