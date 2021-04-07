@@ -11,14 +11,15 @@ html,body #root{
     min-height:100%
 }
 body{
-    background:#B9D3EE;
+    background: #9fd8df;
     font-size: 1.6rem;
     font-family:"Fira Sans",sans-serif;
     line-height: 1.8;
     -webkit-font-smoothing: antialiased !important;
 }
 body,input,button{
-    color: #222;
+    color: #ff7171;
+    font-weight:bold;
     font-size:14px;
     font-family:"Fira Sans",sans-serif;
 }

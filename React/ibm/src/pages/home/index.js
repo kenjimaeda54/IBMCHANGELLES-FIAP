@@ -1,11 +1,12 @@
 import React from "react";
 
-import Inicio from "./inicio";
+import Inicio from "./Inicio";
 
 export default function home() {
     return (
         <>
-            <Inicio/>
+
+            <Inicio />
         </>
     );
 }
