@@ -7,9 +7,16 @@ export const Conteudo = styled.div`
  flex-direction:column;
  justify-content:center;
  align-items:flex-start;
- height:100vh;
+ margin-top:100px;
 
+ @media(max-width:800px){
+  .container{
+     justify-content:center;
+     align-items:center;
+  }
 
+ }
+  
  `;
 
 const animate = keyframes`
@@ -34,36 +41,23 @@ export const Animado = styled.div`
  align-items:center;
  animation:${animate} 4s linear ;
  
-  
+    
 `;
-
-export const Titulo = styled.h1`
-  width:100%;
-  text-align:center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 58px;
-  height:100px;
-  text-shadow:1px 1px 0px #fff;
-`;
-
-
 
 export const AreaBotao = styled.div`
  display:flex;
  width:90%;
- margin-top:-20px;
- margin-right:50px;
  flex-direction:row;
  justify-content:flex-end;
  height:100px;
  align-items:flex-end;
-`;
-
-
-export const Botao = styled.button`
+  a{ 
+  
+  text-decoration:none;  
   text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;   
   width: 268px;
   height: 62px;
   background: #f0e4d7;
@@ -73,18 +67,38 @@ export const Botao = styled.button`
   border-radius:21px;
   font-size: 20px;
   line-height: 23px;
+  color:#ff7171; 
   cursor:pointer;
   font-weight:bold;
   transition:all 0.5s ease-in;
   :hover{
   width:290px;
   height:70px;
+
+  }
+  }
+@media(max-width:800px){
+ button{
+  width: 68px;
+  height: 10px;      
+ }
+
+ a{
+   
+  width: 68px;
+  height: 20px;
+  font-size:12px;
+  line-height:17px;
+  border-radius:5px;
+ }
+
 }
+
 
 `;
 
 
-export const Link = styled.button`
+export const Icon = styled.button`
     display:flex;
     margin-top:20px;
     width:100%;
@@ -124,7 +138,19 @@ export const AreaImg = styled.div`
       border-radius:50px;     
       margin-left:90px;   
       }
- 
+   
+   @media(max-width:800px){
+
+    img{
+
+       height:40px;
+       width:80px;
+       border-radius:5px;
+       margin-left:4px;
+
+    }
+
+   }
   
 `;
 
@@ -146,5 +172,12 @@ export const Paragrafo = styled.p`
   border-bottom-right-radius:20px;
   border-top-left-radius:20px;
   border-top-right-radius:20px;
+
+ @media(max-width:800px){
+    font-size:15px;
+    line-height:18px;
+    padding:5px;
+    margin-top:80px;  
+ } 
 
 `;

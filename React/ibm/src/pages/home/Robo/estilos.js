@@ -6,10 +6,16 @@ export const Conteudo = styled.div`
  width:100%;
  flex-direction:column;
  justify-content:center;
- align-items:flex-start;
- height:100vh;
+ align-items:center;
 
+ @media(max-width:800px){
+  .container{
+     justify-content:center;
+     align-items:center;
+  }
 
+ }
+  
  `;
 
 const animate = keyframes`
@@ -34,36 +40,27 @@ export const Animado = styled.div`
  align-items:center;
  animation:${animate} 4s linear ;
  
-  
+    
 `;
-
-export const Titulo = styled.h1`
-  width:100%;
-  text-align:center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 58px;
-  height:100px;
-  text-shadow:1px 1px 0px #fff;
-`;
-
 
 
 export const AreaBotao = styled.div`
  display:flex;
- width:90%;
- margin-top:-20px;
- margin-right:50px;
+ width:30%;
  flex-direction:row;
- justify-content:flex-end;
+ justify-content:flex-start;
+ align-items:flex-start;
+ align-self:end;
  height:100px;
  align-items:flex-end;
-`;
-
-
-export const Botao = styled.button`
+ margin-top:-100px;
+  a{ 
+  
+  text-decoration:none;  
   text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;   
   width: 268px;
   height: 62px;
   background: #f0e4d7;
@@ -73,18 +70,38 @@ export const Botao = styled.button`
   border-radius:21px;
   font-size: 20px;
   line-height: 23px;
+  color:#ff7171; 
   cursor:pointer;
   font-weight:bold;
   transition:all 0.5s ease-in;
   :hover{
   width:290px;
   height:70px;
+
+  }
+  }
+@media(max-width:800px){
+ button{
+  width: 68px;
+  height: 10px;      
+ }
+
+ a{
+   
+  width: 68px;
+  height: 20px;
+  font-size:12px;
+  line-height:17px;
+  border-radius:5px;
+ }
+
 }
+
 
 `;
 
 
-export const Link = styled.button`
+export const Icon = styled.button`
     display:flex;
     margin-top:20px;
     width:100%;
@@ -99,6 +116,11 @@ export const Link = styled.button`
        color:#f0e4d7;
   
     }
+    @media(max-width:800px){
+       a{
+          margin-top:25px;
+       }
+    }
 
 `;
 
@@ -107,31 +129,44 @@ export const AreaTexto = styled.div`
      display:flex;
      align-items:flex-start;
      flex-direction:column;
-     align-items:center;
-   
+     align-items:center; 
 
 `;
 
 export const AreaImg = styled.div`
       display:flex;
-      width:100%;
-      align-items:flex-end;
+      align-items:flex-start;
       justify-content:flex-start;
+      width:100%;
+      margin-top:40px;
       
       img{
       background-color:#f0e4d7;   
       height:90px;
       width:150px;
-      border-radius:50px;     
-      margin-left:90px;   
+      border-radius:50px;  
+      margin-left:50px;
+      margin-top:-50;
       }
- 
+   
+   @media(max-width:800px){
+
+    img{
+
+       height:40px;
+       width:80px;
+       border-radius:5px;
+       margin-left:4px;
+
+    }
+
+   }
   
 `;
 
 export const Paragrafo = styled.p`
   display:flex;
-  margin:20px;
+  margin-top:100px;
   padding:20px;
   width:70%;
   font-style: normal;
@@ -147,5 +182,11 @@ export const Paragrafo = styled.p`
   border-bottom-right-radius:20px;
   border-top-left-radius:20px;
   border-top-right-radius:20px;
+
+ @media(max-width:800px){
+    font-size:15px;
+    line-height:18px;
+    margin-top:100px;  
+ } 
 
 `;

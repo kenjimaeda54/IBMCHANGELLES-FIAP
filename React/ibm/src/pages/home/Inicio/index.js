@@ -1,26 +1,31 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import {
   Conteudo,
   Paragrafo,
-  Botao, AreaBotao,
-  Link,
+   AreaBotao,
+  Icon,
   AreaTexto,
   AreaImg,
 } from "./estilo.js";
 
 import { FiArrowRightCircle, FiArrowLeftCircle } from "react-icons/fi";
-import bb8 from "../../../assests/bb8.png"
+import bb8 from "../../../assests/bb8.png";
+import { Link } from "react-router-dom";
 
-import Robo from "../Robo"
+
+
+
 import Ansiedade from "../Ansiedade"
 import Especialista from "../Especialista"
+import Robo from "../Robo"
+
+
 
 export default function Inicio() {
   const [loading, setLoading] = useState(false);
   const [next, setNext] = useState(false);
   const [back, setBack] = useState(false);
   const [neutro, setNeutro] = useState(false);
-
 
   function proximo() {
     setLoading(true);
@@ -54,7 +59,7 @@ export default function Inicio() {
           < Ansiedade carregando={setLoading}
             proximo={setNext}
             anterior={setBack}
-            neutro={setNeutro} 
+            neutro={setNeutro}
           />
 
 
@@ -83,7 +88,7 @@ export default function Inicio() {
 
 
   return (
-    <Conteudo  >
+    <Conteudo className="container" >
 
       <AreaTexto>
 
@@ -106,24 +111,29 @@ export default function Inicio() {
 
       </AreaImg>
 
-      <Link onClick={proximo}>
+      <Icon onClick={proximo}>
 
         <FiArrowRightCircle size='30px' /> Sobre VB-2!
 
-      </Link>
+      </Icon>
 
-      <Link onClick={anterior}>
+      <Icon onClick={anterior}>
 
         <FiArrowLeftCircle size='30px' /> Ansiedade
 
-      </Link>
+      </Icon>
 
-      <AreaBotao>
+      <AreaBotao className="button">
 
-        <Botao>Conhecer?</Botao>
+        <Link to='/conversa' >
+       
+       
+          VB-2
+        
+        </Link>
 
       </AreaBotao>
 
-    </Conteudo>
+    </Conteudo >
   );
 }

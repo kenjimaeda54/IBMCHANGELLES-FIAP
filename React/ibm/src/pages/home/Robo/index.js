@@ -1,39 +1,39 @@
 import React from "react"
 
-import { Animado, Paragrafo, Link, AreaBotao, Botao,AreaImg } from "./estilos";
-import { FiArrowLeftCircle,FiArrowRightCircle } from "react-icons/fi";
+import { Animado, Paragrafo, Icon, AreaBotao, AreaImg } from "./estilos";
+import { FiArrowLeftCircle, FiArrowRightCircle } from "react-icons/fi";
 import bb8 from "../../../assests/bb8.png";
+import { Link } from "react-router-dom";
 
+export default function Robo({ proximo, carregando, anterior, neutro }) {
 
-export default function Robo({proximo,carregando,anterior,neutro}) {
-  
   function ansiedade() {
-       carregando(true);
-       anterior(true);
-       proximo(false);
-       neutro(false);
+    carregando(true);
+    anterior(true);
+    proximo(false);
+    neutro(false);
 
   }
 
   function especialista() {
-      carregando(true);
-      anterior(false);
-      proximo(false);
-      neutro(true);
+    carregando(true);
+    anterior(false);
+    proximo(false);
+    neutro(true);
 
   }
 
-  
+
   return (
-    <Animado>
+    <Animado className="container" >
 
       <Paragrafo>
 
         Eu sou amigo virtual, estou muito triste,
-        porque me sente sozinho,meu irmao o BB-8 vive rodeado de amigos
+        porque  sinto sozinho,meu irmao o BB-8 vive rodeado de amigos
         Gosto bastante de conversar sobre diversos assuntos, adoro ajudar
         as pessoas, estou sempre atualizado sobre as redes socias e noticias no
-        geral, e sempre está disposto a encontrar um novo amigo.
+        geral, e sempre estou disposto a encontrar um novo amigo.
         Venha me conhecer
 
   </Paragrafo>
@@ -45,26 +45,31 @@ export default function Robo({proximo,carregando,anterior,neutro}) {
 
       </AreaImg>
 
-      <Link onClick={ especialista } >
+      <Icon onClick={especialista} >
 
-        <FiArrowRightCircle size='30px' /> O que psicologa fala!
+        <FiArrowRightCircle size='30px' /> Comentario!
 
-      </Link>
+      </Icon>
 
-      <Link onClick={ ansiedade }  >
+      <Icon onClick={ansiedade}  >
 
         <FiArrowLeftCircle size='30px' /> Ansiedade!
 
-      </Link> 
+      </Icon>
 
 
-      <AreaBotao>
+      <AreaBotao className="button">
 
 
-        <Botao>Se identificou?</Botao>
+
+        <Link to='/conversa' >
+
+
+          VB-2
+
+        </Link>
 
       </AreaBotao>
-
 
     </Animado>
 

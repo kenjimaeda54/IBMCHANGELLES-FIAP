@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/static/js/main.fcbe9c11.chunk.js",
+    "main.js.map": "/static/js/main.fcbe9c11.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.2f4ff0ee.js",
+    "runtime-main.js.map": "/static/js/runtime-main.2f4ff0ee.js.map",
+    "static/js/2.32953836.chunk.js": "/static/js/2.32953836.chunk.js",
+    "static/js/2.32953836.chunk.js.map": "/static/js/2.32953836.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.32953836.chunk.js.LICENSE.txt": "/static/js/2.32953836.chunk.js.LICENSE.txt",
+    "static/media/bb8.964fc9fb.png": "/static/media/bb8.964fc9fb.png",
+    "static/media/especialista.de076515.jpg": "/static/media/especialista.de076515.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f4ff0ee.js",
+    "static/js/2.32953836.chunk.js",
+    "static/js/main.fcbe9c11.chunk.js"
+  ]
+}

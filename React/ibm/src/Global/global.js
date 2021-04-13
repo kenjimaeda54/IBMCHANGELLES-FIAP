@@ -1,5 +1,4 @@
-import {createGlobalStyle} from "styled-components";
-
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
 *{
@@ -23,4 +22,4 @@ body,input,button{
     font-size:14px;
     font-family:"Fira Sans",sans-serif;
 }
-`;
+`

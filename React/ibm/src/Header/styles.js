@@ -7,7 +7,7 @@ width:100%;
 height:50px;
 `;
 
-export const Cabeçario = styled.nav`
+export const Cabecario = styled.nav`
     display:flex;
     width:80%;
     height:50px;

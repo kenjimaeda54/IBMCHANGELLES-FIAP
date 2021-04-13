@@ -1,17 +1,16 @@
-import React from "react"
-import { HashLink as Link } from "react-router-hash-link";
-import { Conteudo, Cabeçario, Lista } from "./styles"
-
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { Conteudo, Cabecario, Lista } from './styles'
 
 export default function Header() {
     return (
-        <Conteudo id="header" >
-            <Cabeçario>
+        <Conteudo id='header'>
+            <Cabecario>
                 <Lista>
-                    <Link smooth to="#header">Inicio</Link>
-                    <Link smooth to="#sobre">Sobre</Link>
+                    <Link to='/'>Inicio</Link>
+                    <Link to=''>Feedback</Link>
                 </Lista>
-            </Cabeçario>
+            </Cabecario>
         </Conteudo>
-    );
+    )
 }

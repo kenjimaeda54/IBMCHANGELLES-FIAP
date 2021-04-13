@@ -1,8 +1,9 @@
 import React from "react"
 
-import { Animado,Paragrafo,Link,Botao,AreaBotao,AreaImg } from "./estilos"
+import { Animado,Paragrafo,Icon,AreaBotao,AreaImg } from "./estilos"
 import {FiArrowLeftCircle,FiArrowRightCircle} from "react-icons/fi"
 import bb8 from "../../../assests/bb8.png"
+import { Link  } from "react-router-dom";
 
 
 
@@ -29,7 +30,7 @@ export default function Ansiedade({proximo,carregando,anterior,neutro}) {
 
  return( 
    
-   <Animado>
+  <Animado className="container">
       <Paragrafo>
       
       <h3>
@@ -63,27 +64,27 @@ export default function Ansiedade({proximo,carregando,anterior,neutro}) {
 
   </AreaImg>       
     
-  <Link  onClick={ sobre }>
+  <Icon  onClick={ sobre }>
   
       <FiArrowRightCircle  size='30px'/> Sobre VB-2!
 
-  </Link>
+  </Icon>
 
-  <Link  onClick={ profissional  } >
+  <Icon onClick={ profissional  } >
   
        <FiArrowLeftCircle  size='30px'/> O que psicologa fala!
 
-  </Link>
+  </Icon>
 
+  <AreaBotao className="button">
 
+     <Link to='/conversa' >
 
+       VB-2
 
-  <AreaBotao>
-           
-            <Botao>VB-2</Botao>
-            
-  </AreaBotao>   
+     </Link>
 
+   </AreaBotao> 
 
   </Animado>
        
